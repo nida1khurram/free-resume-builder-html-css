@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button class="btn" id="generateBtn">Generate Sample</button>
+        <button class="btn edit" id="editBtn">Edit</button>
+        <button class="btn print" id="printBtn">Print</button>
+    </div>
+
+    <div class="resume" id="resume">
+        <div class="header">
+            <div class="profile-container">
+                <img src="/placeholder.svg" alt="Profile" class="profile-img" id="profileImg">
+                <div class="profile-upload">
+                    <label for="imageUpload">Upload Photo</label>
+                    <input type="file" id="imageUpload" accept="image/*" style="display:none">
+                </div>
+            </div>
+            <div class="header-info">
+                <h1 contenteditable="false">James Miller</h1>
+                <div class="contact-info">
+                    <div contenteditable="false">Address: 44 Shirley Ave, West Chicago, IL 60185</div>
+                    <div contenteditable="false">Email: jmiller@gmail.com</div>
+                    <div contenteditable="false">Phone No: 563-458-6942</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-column">
+                <div class="section">
+                    <h2>Professional Summary</h2>
+                    <div class="item">
+                        <p contenteditable="false">A highly resourceful, flexible, innovative, and enthusiastic project manager. Possessing considerable experience in managing projects from beginning to end, defining the project plan, timeline, scope and executing the analysis before providing detailed recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="section" id="employment">
+                    <h2>
+                        Employment History
+                        <button class="btn add-btn">Add</button>
+                    </h2>
+                    <div class="item">
+                        <button class="delete-btn">Delete</button>
+                        <h3 contenteditable="false">IT Project Manager</h3>
+                        <div class="date" contenteditable="false">May, 2017 - Current</div>
+                        <p contenteditable="false">Telecommunicado Ltd, Birmingham</p>
+                        <p contenteditable="false">Lead a team of technical staff. Planning, procuring and execution of projects</p>
+                    </div>
+                </div>
+
+                <div class="section" id="education">
+                    <h2>
+                        Education
+                        <button class="btn add-btn">Add</button>
+                    </h2>
+                    <div class="item">
+                        <button class="delete-btn">Delete</button>
+                        <h3 contenteditable="false">BSc Computer Science (2:1)</h3>
+                        <p contenteditable="false">University of Birmingham</p>
+                        <div class="date" contenteditable="false">September, 2015 - May, 2016</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section" id="skills">
+                    <h2>
+                        Skills
+                        <button class="btn add-btn">Add</button>
+                        <button class="delete-btn">Delete</button>
+                    </h2>
+                    <div class="progress-container">
+                        <div class="progress-label">
+                        
+                            <span contenteditable="false">XHTML</span>
+                            <span contenteditable="false">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="languages">
+                    <h2>
+                        Languages
+                        <button class="btn add-btn">Add</button>
+                        <button class="delete-btn">Delete</button>
+                    </h2>
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span contenteditable="false">English</span>
+                            <span contenteditable="false">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="hobbies">
+                    <h2>
+                        Hobbies
+                        <button class="btn add-btn">Add</button>
+                        <button class="delete-btn">Delete</button>
+                    </h2>
+                    <div class="item">
+                        <p contenteditable="false">Web Design, Shopping, Travelling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
